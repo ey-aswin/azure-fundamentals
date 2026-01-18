@@ -40,7 +40,7 @@ class MongoDB:
         return collection.delete_many(query) 
 
 # Singleton MongoDB connection
-mongo = MongoDB(uri=Config.MONGO_DB_URI, db_name=Config.MONGO_DATABASE_NAME)
+mongo = ""
 # Dependency injection function
 def mongo_connection() -> MongoDB:
-    return mongo
+    return mongo  

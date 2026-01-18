@@ -7,6 +7,9 @@ import HomeComponent from "./components/HomeComponent";
 import DashbardComponent from "./components/DashbardComponent";
 import InfiniteScrollComponent from "./components/InfiniteScroll/InfiniteScrollComponent";
 import ReactVirtualized from "./components/ReactVirtualized/ReactVirtualized";
+import PaginatedTable from "./components/PaginatedTable/PaginatedTable";
+import TodoComponent from "./components/Todo/TodoComponent";
+import BlobComponent from "./components/blob/BlobComponent";
 
 function App() {
   return (
@@ -16,8 +19,10 @@ function App() {
         <Route path="dashboard" element={<DashbardComponent />} />
         <Route path="scroll" element={<InfiniteScrollComponent />} />
         <Route path="virtualized" element={<ReactVirtualized />} />
-
-      </Routes>
+        <Route path="table" element={<PaginatedTable />} />
+        <Route path="todo" element={<TodoComponent />} />
+        <Route path="blob" element={<BlobComponent />} />
+        </Routes>
     </BrowserRouter>
   );
 }
