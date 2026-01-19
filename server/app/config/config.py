@@ -14,7 +14,9 @@ class Config:
     COSMOS_DB_CONTAINER_NAME = os.getenv("COSMOS_DB_CONTAINER_NAME", "")
     MONGO_DB_URI = os.getenv("MONGO_DB_URI", "")
     MONGO_DATABASE_NAME = os.getenv("MONGO_DATABASE_NAME", "")  
-    
+    CORS_HOSTS = os.getenv("CORS_HOSTS", "").split(",")
+    BLOB_STORAGE_CONNECTION_STRING = os.getenv("BLOB_STORAGE_CONNECTION_STRING", "")
+    BLOB_CONTAINER_NAME = os.getenv("BLOB_STORAGE_CONTAINER_NAME", "")
             
 
 
